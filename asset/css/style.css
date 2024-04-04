@@ -1,0 +1,178 @@
+* {
+    font-family: var(--fonts) !important;
+}
+
+:root {
+    --fonts: "Nunito Sans", sans-serif;
+}
+
+::selection {
+    background: rgba(166, 175, 189, 0.3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+a {
+    font-family: var(--fonts);
+    text-decoration: none;
+}
+
+header {
+    transition: all 0.4s linear;
+}
+
+/* main-banner */
+
+.main-banner {
+    height: 100vh;
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center center;
+}
+
+
+/* .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.69);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* headline-js */
+
+#changingText {
+    border-right: 1px solid black;
+    animation: cursoranim 1s linear infinite;
+}
+
+@keyframes cursoranim {
+    50% {
+        border-right: 1px solid rgba(0, 0, 0, 0);
+    }
+}
+
+
+/* service */
+
+.services-boxes {
+    border: 1px solid var(--bs-border-color);
+}
+
+.srv-box-icon {
+    font-size: 50px;
+    color: var(--bs-cyan);
+}
+
+.services-title-border {
+    height: 2px;
+    width: 40px;
+    margin: 15px auto;
+    transition: all 0.5s;
+    background-color: var(--bs-cyan) !important;
+}
+
+.services-boxes:hover .services-title-border {
+    width: 80px;
+}
+
+/* client */
+
+.ic {
+    transition: all 0.6s;
+}
+
+.ic:focus {
+    background-color: cyan;
+
+}
+
+.ic:focus a {
+    color: white !important;
+}
+
+.ic:hover {
+    background-color: cyan;
+}
+
+.ic:hover a {
+    color: white !important;
+}
+
+
+/* portfolio */
+
+
+
+.work-img {
+    transition: all 0.27s ease;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease;
+}
+
+.work-img:hover .card-overlay {
+    opacity: 1;
+}
+
+.work-img:hover .box-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: all 0.27s ease;
+}
+
+/* footer */
+.footer {
+    padding: 70px 0px;
+    background-color: #212121 !important;
+}
+
+.copyright_content {
+    color: #ababab;
+}
+
+.footer .footer-alt ul li a {
+    border-radius: 50%;
+    transition: all 0.5s;
+    background-color: rgba(241, 241, 241, 0.08);
+    width: 44px;
+    height: 44px;
+    display: block;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.footer .footer-alt ul li a iconify-icon {
+    color: #ababab;
+    transition: all 0.5s;
+    transform: translateY(5px);
+}
+
+.sticky {
+    background-color: white;
+}
